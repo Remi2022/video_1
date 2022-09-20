@@ -1,0 +1,99 @@
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(37, 38, 40);
+        font-family: tahoma;
+        min-height: 100vh;
+    }
+    
+    .all {
+        width: 1000px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .box {
+        position: relative;
+    }
+    
+    .front {
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+    }
+    
+    .front1 {
+        position: relative;
+        background: rgb(37, 38, 40);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        color: rgb(191, 158, 104);
+        transform: translateY(100px);
+    }
+    
+    .box:hover .front1 {
+        background-color: rgb(213, 166, 92);
+        color: #663399;
+        transform: translateY(0);
+    }
+    
+    .front2 {
+        position: relative;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+        transform: translateY(-100px);
+    }
+    
+    .box:hover .front2 {
+        transform: translateY(0);
+    }
+    
+    .front1.content {
+        text-align: center;
+    }
+    
+    .content {
+        text-align: center;
+    }
+    
+    .content i {
+        font-size: 80px;
+    }
+    
+    .content h3 {
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: 1.5em;
+    }
+    
+    .content p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content span {
+        margin: 15px 0 0;
+        display: inline-block;
+        font-weight: 900;
+        color: #663399;
+        border: 1px solid #663399;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    .span.box:hover {
+        background-color: #663399;
+        color: #fff;
+    }
